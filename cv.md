@@ -100,3 +100,15 @@ function setAuthCookies(header) {
 
 headers.forEach(header => setAuthCookies(header));
 ```
+# Work experience
+* 5 years experience in Laravel and php 7+,
+* CRM systems support
+* developing online shops,
+* payment integration, integrations with third party services such as Telegram Bots, VK, WhatsApp and Instagram
+
+# Education
+Bachelor degree in programming engineering, Tashkent University of Information Technologies
+
+# English level
+* Able to read docs
+* communicate in social chats dedicated to IT
