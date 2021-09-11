@@ -1,2 +1,2 @@
 # rsschool-cv
-Rsschool  `stage1` course repository
+https://Jakhongir91.github.io/rsschool-cv/cv
