@@ -12,8 +12,7 @@ ul {
 }
 
 .list {
-    padding-left: 0;
-    list-style: none;
+    padding-left: 20px;
 }
 /* Reset styles END */
 
@@ -45,7 +44,6 @@ ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /*column-gap: 30px;*/
     margin: 0 auto;
     max-width: 1440px;
 }
@@ -56,14 +54,10 @@ ul {
 
 .card {
     width: 300px;
-    /*flex: 1 1 0;*/
-    /*flex-grow: 0;*/
-    /*flex-shrink: 0;*/
-    /*flex-basis: 35%;*/
 }
 
 .padding-right {
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
 .centered-content {
@@ -80,12 +74,19 @@ ul {
     text-align: right;
 }
 
+.card-skill {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 50%;
+}
+
+/* Code sample block BEGIN */
 .hljs {
-    /*display: block !important;*/
      overflow-x: visible !important;
-    padding: .5em;
+     padding: .5em;
      background: white !important;
 }
+/* Code sample block END */
 
 img {
     margin: 0 auto;
@@ -97,6 +98,7 @@ h1 {
 
 h2 {
     text-align: right;
+    line-height: 15px;
 }
 
 /* Footer BEGIN */
