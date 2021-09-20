@@ -99,7 +99,7 @@ body {
 }
 
 .menu-button:checked ~ .menu {
-    max-height: 240px;
+    max-height: 420px;
 }
 
 .menu-button:checked ~ .menu-icon .nav-icon {
@@ -222,7 +222,7 @@ footer {
 
 
 /* media BEGIN */
-@media (min-width: 768px) {
+@media (min-device-width: 935px) {
     .menu li {
         float: left;
     }
@@ -245,7 +245,6 @@ footer {
     .hljs {
         overflow-x: visible !important;
         padding: .5em;
-        /*background: #F0F0F0;*/
     }
     /* Code sample block END */
 }
