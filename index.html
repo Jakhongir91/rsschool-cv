@@ -18,17 +18,18 @@
 <div class="container">
 	<header class="header">
 		<div class="container">
-		<input class="menu-button" type="checkbox" id="menu-button" />
-		<label class="menu-icon" for="menu-button"><span class="nav-icon"></span></label>
+		<input class="menu-button" type="checkbox" id="menu_button"/>
+		<label class="menu-icon" for="menu_button"><span class="nav-icon"></span></label>
 <!-- TODO:		<nav>-->
 			<ul class="menu">
-				<li><a class="menu-item" href="#contacts">Contacts</a></li>
-				<li><a class="menu-item" href="#about_me">About me</a></li>
-				<li><a class="menu-item" href="#skills">Skills</a></li>
-				<li><a class="menu-item" href="#code_sample">Code sample</a></li>
-				<li><a class="menu-item" href="#work_experience">Work experience</a></li>
-				<li><a class="menu-item" href="#education">Education</a></li>
-				<li><a class="menu-item" href="#english_level">English level</a></li>
+				<li><a class="menu-item" href="#name" onclick="uncheckInput()">Name</a></li>
+				<li><a class="menu-item" href="#contacts" onclick="uncheckInput()">Contacts</a></li>
+				<li><a class="menu-item" href="#about_me" onclick="uncheckInput()">About me</a></li>
+				<li><a class="menu-item" href="#skills" onclick="uncheckInput()">Skills</a></li>
+				<li><a class="menu-item" href="#code_sample" onclick="uncheckInput()">Code sample</a></li>
+				<li><a class="menu-item" href="#work_experience" onclick="uncheckInput()">Work experience</a></li>
+				<li><a class="menu-item" href="#education" onclick="uncheckInput()">Education</a></li>
+				<li><a class="menu-item" href="#english_level" onclick="uncheckInput()">English level</a></li>
 			</ul>
 		</div>
 <!--		</nav>-->
@@ -37,7 +38,7 @@
 	<section class="section container first-section">
 		<div class="flex-container">
 			<div class="card">
-				<h1>Nishonboev Jakhongir</h1>
+				<h1 id="name">Nishonboev Jakhongir</h1>
 			</div>
 			<div class="card">
 				<figure>
@@ -48,10 +49,10 @@
 			</div>
 		</div>
 	</section>
-	<section class="section container" id="contacts">
+	<section class="section container">
 		<div class="flex-container">
 			<div class="card">
-				<h2 class="padding-right aside-header">Contacts</h2>
+				<h2 class="padding-right aside-header" id="contacts">Contacts</h2>
 			</div>
 			<div class="card">
 				<ul class="list">
@@ -65,8 +66,8 @@
 			</div>
 		</div>
 	</section>
-	<section class="section container" id="about_me">
-		<h2 class="section-title">About me</h2>
+	<section class="section container">
+		<h2 class="section-title" id="about_me">About me</h2>
 		<div class="flex-container about-container">
 			<p class="about-text">
 				Hi there, I am backend developer. I have 5+ year experience in developing backend systems using
@@ -85,8 +86,8 @@
 		</div>
 	</section>
 	
-	<section class="section container" id="skills">
-		<h2 class="section-title">Skills</h2>
+	<section class="section container">
+		<h2 class="section-title" id="skills">Skills</h2>
 		<div class="flex-container">
 			<div class="card card-skill skill-name"><h4 class="padding-right">Laravel framework:</h4></div>
 			<div class="card card-skill skill-description">5+ years using, about 3 completed projects</div>
@@ -119,8 +120,8 @@
 		</div>
 	
 	</section>
-	<section class="section container" id="code_sample">
-		<h2 class="section-title">Code sample</h2>
+	<section class="section container">
+		<h2 class="section-title" id="code_sample">Code sample</h2>
 		<div class="flex-container">
 			<div class="card">
 				<p class="padding-right">This is <b><i>Javascript</i></b> code sample, which is written by me for `Postman`
@@ -161,10 +162,10 @@ headers.forEach(header => setAuthCookies(header));</code>
 			</figure>
 		</div>
 	</section>
-	<section class="section container" id="work_experience">
+	<section class="section container">
 		<div class="flex-container">
 			<div class="card">
-				<h2 class="padding-right aside-header">Work experience</h2>
+				<h2 class="padding-right aside-header" id="work_experience">Work experience</h2>
 			</div>
 			<div class="card">
 				<ul class="list">
@@ -179,20 +180,20 @@ headers.forEach(header => setAuthCookies(header));</code>
 			</div>
 		</div>
 	</section>
-	<section class="section container" id="education">
+	<section class="section container">
 		<div class="flex-container">
 			<div class="card">
-				<h2 class="padding-right aside-header">Education</h2>
+				<h2 class="padding-right aside-header" id="education">Education</h2>
 			</div>
 			<div class="card">
 				<p>Bachelor degree in programming engineering, Tashkent University of Information Technologies</p>
 			</div>
 		</div>
 	</section>
-	<section class="section container" id="english_level">
+	<section class="section container">
 		<div class="flex-container">
 			<div class="card">
-				<h2 class="padding-right aside-header">English level</h2>
+				<h2 class="padding-right aside-header" id="english_level">English level</h2>
 			</div>
 			<div class="card">
 				<ul class="list">
@@ -224,3 +225,9 @@ headers.forEach(header => setAuthCookies(header));</code>
 
 </body>
 </html>
+
+<script>
+	function uncheckInput() {
+		document.getElementById("menu_button").checked = false;
+	}
+</script>
