@@ -235,11 +235,11 @@ footer {
 
 
 /* media BEGIN */
-@media (min-device-width: 935px) {
+@media (min-width: 1025px) {
     .menu {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         float: none !important;
     }
 
