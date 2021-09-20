@@ -213,9 +213,8 @@ footer {
 }
 .footer-flex {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    padding-top: 75px;
     flex-wrap: wrap;
 }
 
