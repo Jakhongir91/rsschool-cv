@@ -45,6 +45,10 @@ body {
     text-align: center;
 }
 
+.menu li:last-child a {
+    border-right: none;
+}
+
 .menu-item:hover {
     background-color: #ababab;
     color: white;
