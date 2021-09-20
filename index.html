@@ -4,6 +4,10 @@
 	<meta charset="UTF-8">
 	<title>CV</title>
 	
+	<link rel="icon" type="image/jpg" href="./assets/img/avatar.jpg"/>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<link rel="stylesheet" href="./css/style.css"/>
 	
 	<!-- Code highlighting  BEGIN -->
@@ -11,105 +15,140 @@
 	<script src="./js/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
 	<!-- Code highlighting  END -->
+	
+	<script>
+		function uncheckInput() {
+			document.getElementById("menu_button").checked = false;
+		}
+	</script>
 </head>
 <body>
+
+	<header class="header">
+		<div class="container">
+		<input class="menu-button" type="checkbox" id="menu_button"/>
+		<label class="menu-icon" for="menu_button"><span class="nav-icon"></span></label>
+			<ul class="menu">
+				<li><a class="menu-item" href="#name" onclick="uncheckInput()">Name</a></li>
+				<li><a class="menu-item" href="#contacts" onclick="uncheckInput()">Contacts</a></li>
+				<li><a class="menu-item" href="#about_me" onclick="uncheckInput()">About</a></li>
+				<li><a class="menu-item" href="#skills" onclick="uncheckInput()">Skills</a></li>
+				<li><a class="menu-item" href="#code_sample" onclick="uncheckInput()">Code</a></li>
+				<li><a class="menu-item" href="#work_experience" onclick="uncheckInput()">Work</a></li>
+				<li><a class="menu-item" href="#education" onclick="uncheckInput()">Education</a></li>
+				<li><a class="menu-item" href="#english_level" onclick="uncheckInput()">English</a></li>
+				<li><a class="menu-item" href="#projects" onclick="uncheckInput()">Projects</a></li>
+				<li><a class="menu-item" href="#video" onclick="uncheckInput()">Video</a></li>
+			</ul>
+		</div>
+	</header>
 <main>
-	<section class="section container first-section">
-		<div class="flex-container">
-			<div class="card">
-				<h1>Nishonboev Jakhongir</h1>
-			</div>
-			<div class="card">
-				<img class="centered-image"
-				     src="https://lh3.googleusercontent.com/ogw/ADea4I7WKmBRlM4UmBUxZqX3iZ10Vr2nSPx6pm2ixduPsg=s83-c-mo"
-				     alt="Photo">
-			</div>
-		</div>
-	</section>
-	<section class="section container">
-		<div class="flex-container">
-			<div class="card">
-				<h2 class="padding-right">Contacts</h2>
-			</div>
-			<div class="card">
-				<ul class="list">
-					<li>Phone number: <a href="tel:998999016280">+998(99)-901-62-80</a></li>
-					<li>Telegram: <a href="https://t.me/jakhong" title="Telegram">https://t.me/jakhong </a></li>
-					<li>Twitter: <a href="https://twitter.com/Jakhong17324300"
-					                title="Twitter">https://twitter.com/Jakhong17324300 </a></li>
-					<li>Github: <a href="https://github.com/jakhongir91"
-					               title="Github">https://github.com/jakhongir91 </a></li>
-				</ul>
+	<section class="section first-section">
+		<div class="container">
+			<div class="flex-container">
+				<div class="card">
+					<h1 id="name">Nishonboev Jakhongir</h1>
+				</div>
+				<div class="card">
+					<figure>
+						<img class="centered-image"
+						     src="./assets/img/avatar.jpg"
+						     alt="Photo">
+					</figure>
+				</div>
 			</div>
 		</div>
 	</section>
-	<section class="section container">
-		<h2 class="section-title">About me</h2>
-		<div class="flex-container about-container">
-			<p class="about-text">
-				Hi there, I am backend developer. I have 5+ year experience in developing backend systems using
-				Laravel, php
-				7+,
-				redis, Linux, MySql 8.
-			<p class="about-text">I try to follow SOLID and KISS principles, OOP and Design Patters. I am interested in
-				designing
-				complex
-				projects
-				with architecture based on microservices. I always try to learn something new in WEB development.</p>
-			<p class="about-text">At the moment I decided to take RsSchool courses to
-				improve my
-				basic
-				frontend skills to become a fullstack developer.</p>
+	<section class="section section-dark">
+		<div class="container">
+			<div class="flex-container">
+				<div class="card">
+					<h2 class="padding-right aside-header" id="contacts">Contacts</h2>
+				</div>
+				<div class="card">
+					<ul class="list">
+						<li>Phone number: <a href="tel:998999016280">+998(99)-901-62-80</a></li>
+						<li>Telegram: <a href="https://t.me/jakhong" title="Telegram">https://t.me/jakhong </a></li>
+						<li>Twitter: <a href="https://twitter.com/Jakhong17324300"
+						                title="Twitter">https://twitter.com/Jakhong17324300 </a></li>
+						<li>Github: <a href="https://github.com/jakhongir91"
+						               title="Github">https://github.com/jakhongir91 </a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container">
+			<h2 class="section-title" id="about_me">About me</h2>
+			<div class="flex-container about-container">
+				<p class="about-text">
+					Hi there, I am backend developer. I have 5+ year experience in developing backend systems using
+					Laravel, php
+					7+,
+					redis, Linux, MySql 8.
+				<p class="about-text">I try to follow SOLID and KISS principles, OOP and Design Patters. I am interested in
+					designing
+					complex
+					projects
+					with architecture based on microservices. I always try to learn something new in WEB development.</p>
+				<p class="about-text">At the moment I decided to take RsSchool courses to
+					improve my
+					basic
+					frontend skills to become a fullstack developer.</p>
+			</div>
 		</div>
 	</section>
 	
-	<section class="section container">
-		<h2 class="section-title">Skills</h2>
-		<div class="flex-container">
-			<div class="card card-skill skill-name"><b class="padding-right">Laravel framework:</b></div>
-			<div class="card card-skill">5+ years using, about 3 completed projects</div>
-			
-			<div class="card card-skill skill-name"><b class="padding-right">Yii2 framework:</b></div>
-			<div class="card card-skill">completed project, worked in team of 3 developers</div>
-			
-			<div class="card card-skill skill-name"><b class="padding-right">PHP framework:</b></div>
-			<div class="card card-skill">supported admin panel, which had about 5-6 entities and CRUD operations for
-				each one
+	<section class="section section-dark">
+		<div class="container">
+			<h2 class="section-title" id="skills">Skills</h2>
+			<div class="flex-container">
+				<div class="card card-skill skill-name"><h4 class="padding-right">Laravel framework:</h4></div>
+				<div class="card card-skill skill-description">5+ years using, about 3 completed projects</div>
+				
+				<div class="card card-skill skill-name"><h4 class="padding-right">Yii2 framework:</h4></div>
+				<div class="card card-skill skill-description">Completed project, worked in team of 3 developers</div>
+				
+				<div class="card card-skill skill-name"><h4 class="padding-right">PHP framework:</h4></div>
+				<div class="card card-skill skill-description">supported admin panel, which had about 5-6 entities and CRUD operations for
+					each one
+				</div>
+				
+				<div class="card card-skill skill-name"><h4 class="padding-right">Slim framework:</h4></div>
+				<div class="card card-skill skill-description">one small application, which gets trailers from iTunes trailers and showing
+					them on main
+					page
+				</div>
+				
+				<div class="card card-skill skill-name"><h4 class="padding-right">Html, css, js:</h4></div>
+				<div class="card card-skill skill-description">very basic knowledge</div>
+				
+				<div class="card card-skill skill-name"><b class="padding-right">GIT:</b></div>
+				<div class="card card-skill skill-description">creating PRs, branches merging, basic operations such as creating commits and
+					making
+					pushes, creating and cloning repositories, making forks
+				</div>
+				
+				<div class="card card-skill skill-name"><h4 class="padding-right">node.js:</h4></div>
+				<div class="card card-skill skill-description">developed online chat and online game for 2 players, using socket.io</div>
 			</div>
-			
-			<div class="card card-skill skill-name"><b class="padding-right">Slim framework:</b></div>
-			<div class="card card-skill">one small application, which gets trailers from iTunes trailers and showing
-				them on main
-				page
-			</div>
-			
-			<div class="card card-skill skill-name"><b class="padding-right">Html, css, js:</b></div>
-			<div class="card card-skill">very basic knowledge</div>
-			
-			<div class="card card-skill skill-name"><b class="padding-right">GIT:</b></div>
-			<div class="card card-skill">creating PRs, branches merging, basic operations such as creating commits and
-				making
-				pushes, creating and cloning repositories, making forks
-			</div>
-			
-			<div class="card card-skill skill-name"><b class="padding-right">node.js:</b></div>
-			<div class="card card-skill">developed online chat and online game for 2 players, using socket.io</div>
 		</div>
-	
 	</section>
-	<section class="section container">
-		<h2 class="section-title">Code sample</h2>
-		<div class="flex-container">
-			<div class="card">
-				<p class="padding-right">This is `javascript` code sample, which is written by me for `Postman`
-					application, to retrieve
-					cookies from
-					authorization response and store them in cookies manager, so that basic web authorization can be
-					passed for
-					each
-					of api methods defined in same collection.</p>
-			</div>
-			<div class="card">
+	<section class="section">
+		<div class="container">
+			<h2 class="section-title" id="code_sample">Code sample</h2>
+			<div class="flex-container">
+				<div class="card">
+					<p class="padding-right">This is <b><i>Javascript</i></b> code sample, which is written by me for `Postman`
+						application, to retrieve
+						cookies from
+						authorization response and store them in cookies manager, so that basic web authorization can be
+						passed for
+						each
+						of api methods defined in same collection.</p>
+				</div>
+				<figure class="card">
 				<pre class="padding-left">
 <code class="javascript">// 1. Get response headers
 let headers = pm.response.headers.all();
@@ -136,41 +175,46 @@ function setAuthCookies(header) {
 
 headers.forEach(header => setAuthCookies(header));</code>
 				</pre>
+				</figure>
 			</div>
 		</div>
 	</section>
-	<section class="section container">
-		<div class="flex-container">
-			<div class="card">
-				<h2 class="padding-right">Work experience</h2>
-			</div>
-			<div class="card">
-				<ul class="list">
-					<li>5 years experience in Laravel and php 7+,</li>
-					<li>CRM systems support</li>
-					<li>developing online shops,</li>
-					<li>payment integration, integrations with third party services such as Telegram Bots, VK, WhatsApp
-						and
-						Instagram
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-	<section class="section container">
-		<div class="flex-container">
-			<div class="card">
-				<h2 class="padding-right">Education</h2>
-			</div>
-			<div class="card">
-				<p>Bachelor degree in programming engineering, Tashkent University of Information Technologies</p>
+	<section class="section section-dark">
+		<div class="container">
+			<div class="flex-container">
+				<div class="card">
+					<h2 class="padding-right aside-header" id="work_experience">Work experience</h2>
+				</div>
+				<div class="card">
+					<ul class="list">
+						<li>5 years experience in Laravel and php 7+,</li>
+						<li>CRM systems support</li>
+						<li>developing online shops,</li>
+						<li>payment integration, integrations with third party services such as Telegram Bots, VK, WhatsApp
+							and
+							Instagram
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</section>
-	<section class="section container">
-		<div class="flex-container">
+	<section class="section">
+		<div class="container">
+			<div class="flex-container">
+				<div class="card">
+					<h2 class="padding-right aside-header" id="education">Education</h2>
+				</div>
+				<div class="card">
+					<p>Bachelor degree in programming engineering, Tashkent University of Information Technologies</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section section-dark">
+		<div class="flex-container container">
 			<div class="card">
-				<h2 class="padding-right">English level</h2>
+				<h2 class="padding-right aside-header" id="english_level">English level</h2>
 			</div>
 			<div class="card">
 				<ul class="list">
@@ -180,17 +224,47 @@ headers.forEach(header => setAuthCookies(header));</code>
 			</div>
 		</div>
 	</section>
+	<section class="section">
+		<div class="container">
+			<h2 class="section-title" id="projects">Projects</h2>
+			<div class="flex-container">
+				<a class="project project1" href="https://oknofest.com" target="_blank">
+					<img class="project-preview project1" src="https://oknofest.com/assets/img/logo_footer.svg" alt="Logo oknofest.com">
+					<p class="project-description">Web site for annual event in cinema, it shows event's schedule</p>
+				</a>
+				<a class="project project2" href="https://berol.uz" target="_blank">
+					<img class="project-preview project2" src="https://berol.uz/img/logo.svg" alt="Logo berol.uz">
+					<p class="project-description">Online shop, with plenty of categories and subcategories and fast flexible search</p>
+				</a>
+				<a class="project project3" href="https://mybooking.uz" target="_blank">
+					<img class="project-preview project3" src="https://mybooking.uz/frontend/images/icons/logo.svg" alt="Logo mybooking.uz">
+					<p class="project-description">Easy to use tool to find and book best suitable hotels</p>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="section section-dark">
+		<div class="container">
+			<h2 class="section-title" id="video">Video</h2>
+			<iframe
+			        src="https://www.youtube.com/embed/i22NhlDBzSw">
+			</iframe>
+		</div>
+	</section>
 </main>
+
 <footer>
-	<div class="footer-flex">
-		<div class="github-user">
-			<a href="https://github.com/Jakhongir91">https://github.com/Jakhongir91</a>
+	<div class="container footer-flex">
+		<div class="footer-item">
+			<a href="https://github.com/Jakhongir91" target="_blank">
+				<img src="./assets/img/github.png" alt="Github icon" width="55" height="55">
+			</a>
 		</div>
-		<div class="creation-date">
-			<time>2021</time>
+		<div>
+			<h2><time>2021</time></h2>
 		</div>
-		<div class="rsschool-link">
-			<a href="https://rs.school/js/">
+		<div class="footer-item">
+			<a href="https://rs.school/js/" target="_blank">
 				<img src="./assets/img/rs_school_js.svg" alt="rsschool-link" width="100" height="100">
 			</a>
 		</div>
