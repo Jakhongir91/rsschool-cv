@@ -32,6 +32,7 @@
 				<li><a class="menu-item" href="#work_experience" onclick="uncheckInput()">Work</a></li>
 				<li><a class="menu-item" href="#education" onclick="uncheckInput()">Education</a></li>
 				<li><a class="menu-item" href="#english_level" onclick="uncheckInput()">English</a></li>
+				<li><a class="menu-item" href="#projects" onclick="uncheckInput()">Projects</a></li>
 			</ul>
 		</div>
 <!--		</nav>-->
@@ -220,17 +221,20 @@ headers.forEach(header => setAuthCookies(header));</code>
 	</section>
 	<section class="section">
 		<div class="container">
-			<h2>Projects</h2>
-			<div class="flex-container projects">
-				<div class="card">
-					<img src="https://oknofest.com/assets/img/logo_footer.svg" alt="Logo oknofest.com">
-				</div>
-				<div class="card">
-					<img src="https://berol.uz/img/logo.svg" alt="Logo berol.uz">
-				</div>
-				<div class="card">
-					<img src="https://mybooking.uz/frontend/images/icons/logo.svg" alt="Logo oknofest.com">
-				</div>
+			<h2 class="section-title" id="projects">Projects</h2>
+			<div class="flex-container">
+				<a class="project project1" href="https://oknofest.com" target="_blank">
+					<img class="project-preview project1" src="https://oknofest.com/assets/img/logo_footer.svg" alt="Logo oknofest.com">
+					<p class="project-description">Web site for annual event in cinema, it shows event's schedule</p>
+				</a>
+				<a class="project project2" href="https://berol.uz" target="_blank">
+					<img class="project-preview project2" src="https://berol.uz/img/logo.svg" alt="Logo berol.uz">
+					<p class="project-description">Online shop, with plenty of categories and subcategories and fast flexible search</p>
+				</a>
+				<a class="project project3" href="https://mybooking.uz" target="_blank">
+					<img class="project-preview project3" src="https://mybooking.uz/frontend/images/icons/logo.svg" alt="Logo mybooking.uz">
+					<p class="project-description">Easy to use tool to find and book best suitable hotels</p>
+				</a>
 			</div>
 		</div>
 	</section>
@@ -238,7 +242,7 @@ headers.forEach(header => setAuthCookies(header));</code>
 
 <footer>
 	<div class="container footer-flex">
-		<div>
+		<div class="footer-item">
 			<a href="https://github.com/Jakhongir91" target="_blank">
 				<img src="./assets/img/github.png" alt="Github icon" width="55" height="55">
 			</a>
@@ -246,7 +250,7 @@ headers.forEach(header => setAuthCookies(header));</code>
 		<div>
 			<h2><time>2021</time></h2>
 		</div>
-		<div>
+		<div class="footer-item">
 			<a href="https://rs.school/js/" target="_blank">
 				<img src="./assets/img/rs_school_js.svg" alt="rsschool-link" width="100" height="100">
 			</a>

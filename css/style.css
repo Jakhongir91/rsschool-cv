@@ -103,7 +103,7 @@ body {
 }
 
 .menu-button:checked ~ .menu {
-    max-height: 420px;
+    max-height: 490px;
 }
 
 .menu-button:checked ~ .menu-icon .nav-icon {
@@ -126,7 +126,7 @@ html {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -160,7 +160,7 @@ html {
     justify-content: center;
     flex-wrap: wrap;
     margin: 0 auto;
-    max-width: 1440px;
+    max-width: 1000px;
 }
 
 .projects {
@@ -174,7 +174,55 @@ html {
 }
 
 .card {
+    display: block;
+    position: relative;
     width: 300px;
+}
+
+.project-preview {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 100px;
+    background-color: rgba(46, 52, 66, 0.3);
+}
+
+.project {
+    display: block;
+    padding: 50px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.project-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.project-description {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.project1 {
+    background-color: #222222;
+    color: white;
+}
+
+.project2 {
+    background-color: white;
+    color: #3ba49e;
+}
+
+.project3 {
+    background-color: #071a2e;
+    color: white;
+}
+
+.project:hover {
+    opacity: 0.5;
 }
 
 .padding-right {
@@ -237,6 +285,7 @@ footer {
     background-color: var(--common-color);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
 }
+
 .footer-flex {
     display: flex;
     justify-content: space-around;
@@ -244,6 +293,14 @@ footer {
     flex-wrap: wrap;
 }
 
+.footer-item {
+    transition: opacity 0.2s;
+}
+
+.footer-item:hover {
+    opacity: 0.5;
+}
+/* Footer END */
 
 
 /* media BEGIN */
