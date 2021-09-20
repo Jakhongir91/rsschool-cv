@@ -14,6 +14,21 @@
 </head>
 <body>
 <div class="container">
+	<header class="header">
+		<input class="menu-button" type="checkbox" id="menu-button" />
+		<label class="menu-icon" for="menu-button"><span class="nav-icon"></span></label>
+<!-- TODO:		<nav>-->
+			<ul class="menu">
+				<li><a class="menu-item" href="#contacts">Contacts</a></li>
+				<li><a class="menu-item" href="#about_me">About me</a></li>
+				<li><a class="menu-item" href="#skills">Skills</a></li>
+				<li><a class="menu-item" href="#code_sample">Code sample</a></li>
+				<li><a class="menu-item" href="#work_experience">Work experience</a></li>
+				<li><a class="menu-item" href="#education">Education</a></li>
+				<li><a class="menu-item" href="#english_level">English level</a></li>
+			</ul>
+<!--		</nav>-->
+	</header>
 <main>
 	<section class="section container first-section">
 		<div class="flex-container">
@@ -29,7 +44,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section container">
+	<section class="section container" id="contacts">
 		<div class="flex-container">
 			<div class="card">
 				<h2 class="padding-right">Contacts</h2>
@@ -46,7 +61,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section container">
+	<section class="section container" id="about_me">
 		<h2 class="section-title">About me</h2>
 		<div class="flex-container about-container">
 			<p class="about-text">
@@ -66,7 +81,7 @@
 		</div>
 	</section>
 	
-	<section class="section container">
+	<section class="section container" id="skills">
 		<h2 class="section-title">Skills</h2>
 		<div class="flex-container">
 			<div class="card card-skill skill-name"><h4 class="padding-right">Laravel framework:</h4></div>
@@ -100,7 +115,7 @@
 		</div>
 	
 	</section>
-	<section class="section container">
+	<section class="section container" id="code_sample">
 		<h2 class="section-title">Code sample</h2>
 		<div class="flex-container">
 			<div class="card">
@@ -142,7 +157,7 @@ headers.forEach(header => setAuthCookies(header));</code>
 			</figure>
 		</div>
 	</section>
-	<section class="section container">
+	<section class="section container" id="work_experience">
 		<div class="flex-container">
 			<div class="card">
 				<h2 class="padding-right">Work experience</h2>
@@ -160,7 +175,7 @@ headers.forEach(header => setAuthCookies(header));</code>
 			</div>
 		</div>
 	</section>
-	<section class="section container">
+	<section class="section container" id="education">
 		<div class="flex-container">
 			<div class="card">
 				<h2 class="padding-right">Education</h2>
@@ -170,7 +185,7 @@ headers.forEach(header => setAuthCookies(header));</code>
 			</div>
 		</div>
 	</section>
-	<section class="section container">
+	<section class="section container" id="english_level">
 		<div class="flex-container">
 			<div class="card">
 				<h2 class="padding-right">English level</h2>

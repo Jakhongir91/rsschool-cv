@@ -18,6 +18,12 @@ ul {
 }
 /* Reset styles END */
 
+
+
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -109,6 +115,9 @@ h2 {
 }
 
 /* Footer BEGIN */
+footer {
+    background-color: #d7d6d6;
+}
 .footer-flex {
     display: flex;
     justify-content: space-evenly;
