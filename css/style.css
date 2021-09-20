@@ -38,7 +38,7 @@ body {
 
 .menu-item {
     display: block;
-    padding: 20px;
+    padding: 15px;
     border-right: 1px solid #ffffff;
     text-decoration: none;
     color: black;
@@ -103,7 +103,7 @@ body {
 }
 
 .menu-button:checked ~ .menu {
-    max-height: 560px;
+    max-height: 640px;
 }
 
 .menu-button:checked ~ .menu-icon .nav-icon {
@@ -280,6 +280,15 @@ h2::before {
     pointer-events: none;
 }
 
+/*Video section BEGIN*/
+iframe {
+    display: block;
+    margin: 0 auto;
+    width: 430px;
+    height: 300px;
+}
+/*Video section END*/
+
 /* Footer BEGIN */
 footer {
     background-color: var(--common-color);
@@ -350,6 +359,13 @@ footer {
     .card p {
         text-align: center;
     }
+
+    /*Video section BEGIN*/
+    iframe {
+        width: 220px;
+        height: 150px;
+    }
+    /*Video section END*/
 }
 
 @media (max-width: 700px) {
@@ -366,6 +382,12 @@ footer {
 
     .skill-description {
         text-align: center;
+    }
+}
+
+@media (max-width: 350px) {
+    .menu-item {
+        padding: 10px;
     }
 }
 /* media END */
