@@ -15,6 +15,12 @@
 	<script src="./js/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
 	<!-- Code highlighting  END -->
+	
+	<script>
+		function uncheckInput() {
+			document.getElementById("menu_button").checked = false;
+		}
+	</script>
 </head>
 <body>
 
@@ -267,9 +273,3 @@ headers.forEach(header => setAuthCookies(header));</code>
 
 </body>
 </html>
-
-<script>
-	function uncheckInput() {
-		document.getElementById("menu_button").checked = false;
-	}
-</script>
