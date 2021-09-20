@@ -18,7 +18,122 @@ ul {
 }
 /* Reset styles END */
 
+/* Header BEGIN */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: #d7d6d6;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+}
 
+.menu {
+    overflow: hidden;
+    list-style: none;
+}
+
+.menu-item {
+    display: block;
+    padding: 20px;
+    border-right: 1px solid #ffffff;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.menu-item:hover {
+    background-color: #ababab;
+    color: white;
+}
+
+.menu {
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    clear: both;
+}
+
+.menu-icon {
+    position: relative;
+    float: right;
+    padding: 28px 20px;
+    cursor: pointer;
+}
+
+.nav-icon {
+    position: relative;
+    display: block;
+    height: 2px;
+    width: 18px;
+    background: #333333;
+    transition: background 0.2s ease-out;
+}
+
+.nav-icon:before {
+    position: absolute;
+    top: 5px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #333333;
+    content: "";
+    transition: all 0.2s ease-out;
+}
+
+.nav-icon:after {
+    position: absolute;
+    top: -5px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #333333;
+    content: "";
+    transition: all 0.2s ease-out;
+}
+
+.menu-button {
+    display: none;
+}
+
+.menu-button:checked ~ .menu {
+    max-height: 240px;
+}
+
+.menu-button:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+
+.menu-button:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.menu-button:checked ~ .menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+@media (min-width: 768px) {
+    .menu li {
+        float: left;
+    }
+
+    .menu-item {
+        padding: 20px 30px;
+    }
+
+    .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
+/* Header END */
 
 html {
     scroll-behavior: smooth;
