@@ -232,8 +232,11 @@ footer {
 
 /* media BEGIN */
 @media (min-device-width: 935px) {
-    .menu li {
-        float: left;
+    .menu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        float: none !important;
     }
 
     .menu-item {
