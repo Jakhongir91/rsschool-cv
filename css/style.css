@@ -115,26 +115,6 @@ body {
     transform: rotate(45deg);
     top: 0;
 }
-
-@media (min-width: 768px) {
-    .menu li {
-        float: left;
-    }
-
-    .menu-item {
-        padding: 20px 30px;
-    }
-
-    .menu {
-        clear: none;
-        float: right;
-        max-height: none;
-    }
-
-    .menu-icon {
-        display: none;
-    }
-}
 /* Header END */
 
 html {
@@ -210,13 +190,9 @@ html {
     text-transform: capitalize;
 }
 
-/* Code sample block BEGIN */
 .hljs {
-     overflow-x: visible !important;
-     padding: .5em;
-     background: white !important;
+    background: #ffffff !important;
 }
-/* Code sample block END */
 
 img {
     margin: 0 auto;
@@ -240,6 +216,45 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     padding-top: 75px;
+    flex-wrap: wrap;
 }
-/* Footer END */
 
+
+
+/* media BEGIN */
+@media (min-width: 768px) {
+    .menu li {
+        float: left;
+    }
+
+    .menu-item {
+        padding: 20px 30px;
+    }
+
+    .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    /* Code sample block BEGIN */
+    .hljs {
+        overflow-x: visible !important;
+        padding: .5em;
+        /*background: #F0F0F0;*/
+    }
+    /* Code sample block END */
+}
+
+@media (max-width: 1100px) {
+    .hljs {
+        overflow-x: auto !important;
+        padding: .5em;
+        background: #F0F0F0 !important;
+    }
+}
+/* media END */
