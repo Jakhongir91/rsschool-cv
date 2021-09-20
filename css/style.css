@@ -5,11 +5,13 @@ h4,
 ul,
 pre,
 figure,
-p {
+p,
+body {
     margin: 0;
 }
 
-ul {
+ul,
+body {
     padding: 0;
 }
 
