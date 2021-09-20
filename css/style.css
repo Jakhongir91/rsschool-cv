@@ -103,7 +103,7 @@ body {
 }
 
 .menu-button:checked ~ .menu {
-    max-height: 490px;
+    max-height: 560px;
 }
 
 .menu-button:checked ~ .menu-icon .nav-icon {
@@ -313,7 +313,7 @@ footer {
     }
 
     .menu-item {
-        padding: 20px 30px;
+        padding: 10px 20px;
     }
 
     .menu {
