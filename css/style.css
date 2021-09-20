@@ -256,5 +256,32 @@ footer {
         padding: .5em;
         background: #F0F0F0 !important;
     }
+
+    .aside-header {
+        padding: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .card p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .card-skill {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 100%;
+    }
+
+    .skill-name {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .skill-description {
+        text-align: center;
+    }
 }
 /* media END */
