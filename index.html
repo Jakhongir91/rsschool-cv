@@ -82,9 +82,7 @@ function setAuthCookies(header) {
         let responseHeader = header.value.substr(0, header
 					 .value
 					 .indexOf(';'));
-					
         let [cookieName, cookieValue] = responseHeader.split('=');
-        
         cookieJar.set(
 		pm.environment.get('url'),
 		cookieName,
